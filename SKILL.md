@@ -50,7 +50,7 @@ BIN=$(bash "${CLAUDE_SKILL_DIR}/scripts/ensure_binary.sh")
             --question "用户所问之事" \
             --type <career|wealth|relation|health|decision|timing|other> \
             [--time 2026-05-30T14:30:00+08:00] \
-            [--lon 116.4] \
+            [--lon 116.4] [--no-truesolar] \
             [--mode prompt|full] \
             [--yarrow] \
             [--upper N --lower N --changing N] \
