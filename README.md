@@ -1,5 +1,9 @@
 # 周易三式占卜 · Claude Code Skill
 
+[![Release](https://img.shields.io/github/v/release/y001j/zhouyi-divination-skill?label=release&color=brightgreen)](https://github.com/y001j/zhouyi-divination-skill/releases/latest)
+[![Platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20Linux%20%7C%20Windows-blue)](#支持的平台)
+[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-8A63D2)](https://docs.anthropic.com/en/docs/claude-code)
+
 一个把中式术数（**周易六爻 / 奇门遁甲 / 大六壬 / 三式互参**）封装成的 Claude Code skill。
 你对它说「帮我算一卦」「用奇门看看方位」「六壬断断这个人」，它就会**起盘排卦**，并产出一份结构化的解卦材料，由 Claude 按传统解卦规则替你解读。
 
