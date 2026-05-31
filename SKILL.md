@@ -52,7 +52,8 @@ BIN=$(bash "${CLAUDE_SKILL_DIR}/scripts/ensure_binary.sh")
             [--time 2026-05-30T14:30:00+08:00] \
             [--lon 116.4] \
             [--mode prompt|full] \
-            [--upper N --lower N --changing N]
+            [--upper N --lower N --changing N] \
+            [--benming 属猪 --gender 男 --birthyear 1995]
 ```
 
 ### 参数说明
@@ -64,6 +65,7 @@ BIN=$(bash "${CLAUDE_SKILL_DIR}/scripts/ensure_binary.sh")
 - `--lon`：经度（东经为正），按真太阳时校正。一般不需要。
 - `--mode`：`prompt`（默认，仅起盘+提示词）或 `full`（额外附程序渲染的盘面/解卦文字到 `interpret` 字段，供你参考）。
 - 周易专属（让卦象可复现，用于复盘/测试）：`--upper`（上卦数）`--lower`（下卦数）`--changing`（变爻位 0–6）。三者齐全且未加 `--coin` 时走数字起卦法，结果确定可复现；否则用铜钱法（随机）。`--coin` 强制铜钱法。
+- 六壬 / 互参可选（年命断法）：`--benming`（本命，填生肖「猪」「属猪」或地支「亥」皆可）、`--gender`（`男`/`女`）、`--birthyear`（出生公历年，如 `1995`）。**六壬起课本身只需时间，这三个是可选增强**——用户若**主动提供了**自己的属相/生日/性别，传入后会接入「年命/行年」断法，让吉凶救应判得更贴合；用户没提就别问、别传，按纯时间起课即可。`--benming` 无法识别时会自动忽略并照常起课。
 
 ### 问题类型键
 
