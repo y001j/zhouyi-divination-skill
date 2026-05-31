@@ -1,0 +1,12 @@
+# 运行时下载/缓存的多平台二进制——走 GitHub Release，不入仓库
+bin/
+
+# 离线分发 zip——作为 Release 附件，不入仓库
+*.zip
+zhouyi-divination-skill-offline/
+
+# 系统/IDE 文件
+.DS_Store
+**/.DS_Store
+.idea/
+*.log
